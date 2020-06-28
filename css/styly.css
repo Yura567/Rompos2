@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    float: left;
+}
+.header{
+    width: 100%;
+    float: left;
+    background-image: url(../img/maket.png);
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    float: left;
+    width: 100%;
+ margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.abc{
+    font-size: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.minbtn{
+    float: left;
+    background: yellow;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+}
+.logo{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.navigation{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.navigation ul{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation li{
+    list-style: none;
+     border-bottom: 1px solid #ff000000;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.navigation li:hover{
+    border-bottom: 1px solid black;
+    
+}
+.headr_img{
+    position: relative;
+    width: 40%;
+    top: 180px;
+    left: 60%;
+}
+
+
+.burger-menu{
+   
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    display: none;
+}
+
+#check-menu{
+    display: none;
+}
+
+label{
+    display:block;
+    position: absolute;
+    top: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s all
+}
+
+
+.second, .third{
+    top: 18px;
+}
+
+.fourth{
+    top: 28px;
+}
+
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+.main-menu a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,.3);
+    background: #808080b8;
+    
+}
+
+.main-menu a:hover{
+    background-color: aqua;
+}
+
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg)
+}
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg)
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+
+
+
+
+
+
+.main{
+    width: 100%;
+    float: left;
+}
+.best_travel{
+    width: 100%;
+    float: left;
+    background: white;
+}
+.main_best_travel_container{
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    bottom: 100px;
+}
+.main_best_travel_container_text1{
+    font-size: 98px;
+    
+    font-family: myriad-pro, sans-serif;
+}
+.main_best_travel_container_text2{
+    font-size: 76px;
+   font-family: 'Julius Sans One', sans-serif;
+}
+.main_best_travel_container_minitext{
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif
+}
+.main_best_travel_container_btn{
+    width: 300px;
+    height: 80px;
+    background: #3acdd5;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main_best_travel_container a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.main_best_travel_container_btn:hover{
+   background: #2b9ea5;  
+}
+
+
+
+
+
+
+
+@media (min-width:700px) and (max-width:1000px){
+    .main_best_travel_container_text1{
+      
+    }
+    
+    .navigation ul{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+    .headr_img {
+    position: relative;
+    width: 40%;
+        
+    top: 90px;
+    left: 60%;
+    
+}
+     .navigation {
+        margin-top: 22px;
+    }
+.main_best_travel_container {
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+ } 
+     .main_best_travel_container_btn{
+        margin-left: 10%;
+    }
+    .main_best_travel_container_minitext {
+    margin-left: 20%;
+    }
+}
+
+
+
+
+@media (min-width:0px) and (max-width:700px){
+    .logo{
+        display: none;
+    }
+    .navigation{
+        display: none;
+        
+    }
+    .burger-menu{
+        display: block!important;
+    }
+     .navigation ul{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+    .navigation{
+        display: none}
+    .main_best_travel_container_text1{
+        font-size: 90px;
+    }
+.headr_img {
+    position: relative;
+    width: 40%;
+    top: 51px;
+    left: 60%;
+    }
+    .main_best_travel_container_text2 {
+    font-size: 55px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+    .main_best_travel_container {
+    width: 60%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+ } 
+    .main_best_travel_container_btn{
+        margin-left: 10%;
+    }
+    .main_best_travel_container_minitext {
+    margin-left: 20%;
+    }
+}
+
